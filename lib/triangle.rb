@@ -11,6 +11,8 @@ class Triangle
   def kind
     if @side1 == @side2 and @side2 == @side3
       :equilateral
+    elsif @side2 == @side3
+      :isosceles
     end
   end
 end
