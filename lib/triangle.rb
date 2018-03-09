@@ -14,7 +14,7 @@ class Triangle
 
   def kind
     if @side1 < 1 or @side2 < 1 or @side3 < 1
-      raise TriangleError
+      # raise TriangleError
   elsif @side1 == @side2 and @side2 == @side3
       :equilateral
     elsif @side2 == @side3 or @side1 == @side3 or @side1 == @side2
