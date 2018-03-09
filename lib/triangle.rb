@@ -13,7 +13,7 @@ class Triangle
   end
 
   def kind
-    if @side1 == 0 or @side2 == 0 or @side3 == 0
+    if @side1 < 1 or @side2 < 1 or @side3 < 1
       raise TriangleError
   elsif @side1 == @side2 and @side2 == @side3
       :equilateral
